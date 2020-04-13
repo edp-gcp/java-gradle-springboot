@@ -2,21 +2,14 @@ name: java-gradle-springboot
 namespace: ""
 cdPipelineName: ""
 cdPipelineStageName: ""
-dnsWildcard: gcp.edp-epam.com
-
+dnsWildcard: k9s.ru
 
 database:
-  required: true
-  version: postgres:9.6
-  storageClass: standard
-  capacity: 3Mi
-
+  required: false
 
 
 ingress:
-  required: true
-  site: ira
-  path: /
+  required: false
 
 image:
   name: java-gradle-springboot
